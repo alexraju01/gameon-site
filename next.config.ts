@@ -1,9 +1,11 @@
 import type { NextConfig } from "next";
 
+const isProd = process.env.NODE_ENV === "production";
+
 const nextConfig: NextConfig = {
 	output: "export", // enables static HTML export
-	basePath: "/gameon-site", // only if deploying to github.io/your-repo-name
-	assetPrefix: "/gameon-site/",
+	basePath: isProd ? "/gameon-site" : "", // only if deploying to github.io/your-repo-name
+	// assetPrefix: "/gameon-site/",
 
 	images: {
 		unoptimized: true,
