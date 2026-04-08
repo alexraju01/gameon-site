@@ -62,7 +62,7 @@ const Hero = () => {
 				<div className='hidden lg:flex justify-center items-center'>
 					<div className='relative p-12 bg-white/5 border border-white/10 rounded-2xl backdrop-blur-xl rotate-3 hover:rotate-0 transition-transform duration-500'>
 						<Image
-							src='/logo.png'
+							src='/gameon-site/logo.png'
 							alt='Game On Logo'
 							width={500}
 							height={250}
