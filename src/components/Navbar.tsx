@@ -15,7 +15,7 @@ const Navbar = () => {
 						{" "}
 						{/* Container to control size */}
 						<Image
-							src='/logo.png'
+							src='./logo.png'
 							alt='Game On Logo'
 							fill
 							className='object-contain'

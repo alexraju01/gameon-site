@@ -5,7 +5,7 @@ const isProd = process.env.NODE_ENV === "production";
 const nextConfig: NextConfig = {
 	output: "export", // enables static HTML export
 	basePath: isProd ? "/gameon-site" : "", // only if deploying to github.io/your-repo-name
-	assetPrefix: isProd ? "/" : "",
+	assetPrefix: isProd ? "/gameon-site/" : "",
 
 	images: {
 		unoptimized: true,
