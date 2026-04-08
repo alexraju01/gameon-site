@@ -11,7 +11,17 @@ const Navbar = () => {
 					{/* <span className='text-xl md:text-2xl font-black italic tracking-tighter uppercase group-hover:text-gray-300 transition-colors'>
 						GAME <span className='text-white border-b-2 border-white/20'>ON</span>
 					</span> */}
-					<img src='/logo.png' alt='logo' className='h-15' />
+					<div className='relative h-12 w-32'>
+						{" "}
+						{/* Container to control size */}
+						<Image
+							src='/logo.png'
+							alt='Game On Logo'
+							fill
+							className='object-contain'
+							priority // Ensures the logo loads immediately
+						/>
+					</div>
 				</Link>
 
 				{/* Navigation Links */}
